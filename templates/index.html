@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}All Meetups{% endblock %}
+
+{% block main_heading %} We got great tech meetups coming up!{% endblock  %}
+
+{% block header_content %}
+<p>Find the one that best suits your needs!</p>
+{% endblock  %}
+
+{% block body %}
+<section>
+    <h2>Upcoming Meetups</h2>
+    <ol>
+        {% for meetup_item in meetups %}
+            {% include "includes/meetup-item.html"%}
+        {% endfor %}
+    </ol>
+</section>
+{% endblock  %}

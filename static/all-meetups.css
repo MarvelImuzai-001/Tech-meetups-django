@@ -1,0 +1,147 @@
+section {
+    max-width: 40rem;
+    margin: 3rem auto;
+  }
+  
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .meetup-item {
+    margin: 1rem 0;
+    background-color: #7f7f7f;
+    border: 4px solid black;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+  }
+  
+  .meetup-summary {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .meetup-image {
+    margin-right: 2rem;
+  }
+  
+  .meetup-image img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .meetup-details h3 {
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .meetup-details address {
+    font-style: italic;
+  }
+  
+  .meetup-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+  }
+  
+  .meetup-actions .btn {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+  }
+  
+  .meetup-actions .btn:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+  }
+
+  /* Tablet View */
+@media (max-width: 768px) {
+  section {
+    max-width: 35rem;
+    margin: 2rem auto;
+  }
+
+  .meetup-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .meetup-image {
+    margin: 0 0 1rem 0;
+  }
+
+  .meetup-image img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .meetup-details h3 {
+    font-size: 1.8rem;
+  }
+
+  .meetup-actions {
+    text-align: center;
+  }
+}
+
+/* Mobile View (General Smartphones) */
+@media (max-width: 480px) {
+  section {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .meetup-item {
+    padding: 1rem;
+  }
+
+  .meetup-image img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .meetup-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .meetup-actions .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* iPhone 12 Pro View */
+@media (max-width: 390px) {
+  section {
+    max-width: 85%;
+    margin: 1rem auto;
+  }
+
+  .meetup-item {
+    padding: 0.75rem;
+  }
+
+  .meetup-image img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .meetup-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .meetup-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}

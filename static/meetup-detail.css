@@ -1,0 +1,206 @@
+article {
+    max-width: 60rem;
+    margin: 5rem auto;
+    border-radius: 6px;
+    background-color: hsl(0, 0%, 100%);
+    border: 4px solid #000000;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #main-image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    position: absolute;
+    top: -5rem;
+    left: calc(50% - 5rem);
+    border-radius: 50%;
+    border: 4px solid #000000;
+  }
+  
+  section:first-of-type {
+    margin-top: 6rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  address span {
+    font-weight: bold;
+    
+  }
+  
+  #details h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #details > p {
+    color: #000000;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  #details .date{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #details footer {
+    color: #000000;
+  }
+  
+  #details footer a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #registration ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #registration label {
+    font-weight: bold;
+    color: #000000;
+    margin-right: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #registration input {
+    font: inherit;
+    width: 40%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #registration-actions {
+    margin-top: 1.5rem;
+  }
+  
+  #registration .errorlist {
+    margin-bottom: 0.5rem;
+    color: #a50024;
+  }
+  
+  #footer p a{
+    text-decoration: none;
+    color: #959595;
+    font-weight: bold;
+  }
+
+  /* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  article {
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+
+  #main-image {
+    width: 8rem;
+    height: 8rem;
+    top: -4rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  #registration input {
+    width: 60%;
+  }
+
+  #details .date {
+    font-size: 1.75rem;
+  }
+
+  #registration label,
+  #registration input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #registration input {
+    padding: 0.5rem;
+  }
+
+  #footer p a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  article {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  #main-image {
+    width: 7rem;
+    height: 7rem;
+    top: -3.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #registration input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #details .date {
+    font-size: 1.5rem;
+  }
+
+  #footer p a {
+    font-size: 0.85rem;
+  }
+}
+
+/* iPhone 12 Pro View (max-width: 390px) */
+@media (max-width: 390px) {
+  article {
+    max-width: 100%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+
+  #main-image {
+    width: 6rem;
+    height: 6rem;
+    top: -3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  #registration input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #details .date {
+    font-size: 1.25rem;
+  }
+
+  #footer p a {
+    font-size: 0.8rem;
+  }
+}
