@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-lk#4qz!cd8*4jph8q%e3w7078k)^nqbvf52l*r3s&sq!-lv#d5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["main_project.onrender.com"]
 
 
 # Application definition
@@ -30,12 +30,14 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',  
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+
 ]
 
 ROOT_URLCONF = "main_project.urls"
@@ -108,7 +110,10 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = "static/"
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
+if not DEBUG:
+    STATIC_ROOT = BASE_DIR / "staticfiles"
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 MEDIA_ROOT = BASE_DIR / "uploads"
