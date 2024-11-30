@@ -7,6 +7,9 @@
         <address>{{meetup_item.location}}</address>
     </div>
 </div>
-    <div class="meetup-actions"><a href="{% url "meetup-detail" meetup_item.slug %}" class="btn">More Details</a></div>
+    <div class="meetup-actions">
+        <a href="{% url 'meetup-detail' meetup_item.slug %}" class="btn">More Details</a>
+    </div>
+    
     </article>
 </li>
