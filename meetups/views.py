@@ -6,7 +6,7 @@ from .forms import RegistrationForm
 def index(request):
     meetups = Meetup.objects.all()
     context = {
-        "meetups" : meetups,
+        "meets" : meetups,
         
     }
     return render(request,"index.html", context )
